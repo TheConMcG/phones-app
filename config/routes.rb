@@ -3,6 +3,12 @@ Rails.application.routes.draw do
 
   get "/phones" => "phones#index"
 
+  get "/phones/new" => "phones#new"
+
   get "/phones/:id" => "phones#show"
+
+  post "/phones" => "phones#create"
+
+  
 
 end

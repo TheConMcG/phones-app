@@ -10,4 +10,18 @@ class PhonesController < ApplicationController
     render 'show.html.erb'
   end
 
+  def create
+    @phone = Phone.new(
+      name: params[:name],
+      version: params[:version],
+      color: params[:color]
+    )
+    @phone.save
+    redirect_to "/phones/#{@phone.id}"
+  end
+
+  def new
+    render 'new.html.erb'
+  end
+
 end
