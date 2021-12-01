@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Megapixels:</strong>
+  <%= @camera.megapixels %>
+</p>
+
+<p>
+  <strong>Lense size:</strong>
+  <%= @camera.lense_size %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @camera.description %>
+</p>
+
+<%= link_to 'Edit', edit_camera_path(@camera) %> |
+<%= link_to 'Back', cameras_path %>

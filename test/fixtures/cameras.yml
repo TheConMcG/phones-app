@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  megapixels: 1
+  lense_size: 1
+  description: MyString
+
+two:
+  megapixels: 1
+  lense_size: 1
+  description: MyString
