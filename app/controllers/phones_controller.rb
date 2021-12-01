@@ -6,7 +6,7 @@ class PhonesController < ApplicationController
   end
 
   def show
-    @phone = Phone.find(1)
+    @phone = Phone.find_by(id: params[:id])
     render 'show.html.erb'
   end
 
